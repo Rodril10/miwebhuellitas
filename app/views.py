@@ -83,7 +83,7 @@ def pagina_exit(request):
 def pagina_ingresar(request):
        
     if request.method == 'GET':
-        return render(request, 'ingresar.html',{
+        return render(request, 'Ingresar.html',{
             'form': AuthenticationForm
         })
         
@@ -91,7 +91,7 @@ def pagina_ingresar(request):
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         
         if user is None:
-            return render(request, 'ingresar.html',{
+            return render(request, 'Ingresar.html',{
                 'form': AuthenticationForm,
                 'error': 'Usuario o contraseña incorrecta'
             })
