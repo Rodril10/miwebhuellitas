@@ -132,10 +132,12 @@ if DEBUG == False:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-LOGIN_REDIRECT_URL = '/ingresar'
 
 
-LOGIN_URL = '/ingresar'
+LOGIN_REDIRECT_URL = '/indexautenticado.html'
+
+
+LOGIN_URL = '/ingresar.html'
 
 
 # Default primary key field type
