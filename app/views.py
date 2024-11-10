@@ -38,7 +38,7 @@ def pagina_adopta(request):
     
 @login_required    
 def pagina_indexautenticado(request):
-    return render(request, 'indexAutenticado.html')
+    return render(request, 'indexautenticado.html')
     
     
     
