@@ -1,0 +1,33 @@
+{% extends 'Layouts/Base.html' %}
+
+{% block content %}
+
+<section class="Section-Testimonios">
+    <h1 class="Title-Testimonios">¡Únete a Nuestra Causa!</h1>
+
+    <p class="introduccion-testimonios">
+        Los testimonios que estás a punto de leer son solo una pequeña muestra del impacto positivo que "Huellitas" tiene en la vida de los animales y las personas de nuestra comunidad. Cada día, trabajamos con dedicación y pasión para rescatar, rehabilitar y encontrar hogares amorosos para nuestros amigos peludos. Pero nuestro trabajo no sería posible sin el apoyo incondicional de adoptantes, voluntarios, donantes y todos aquellos que creen en nuestra misión.
+
+        En "Huellitas", creemos que cada vida es valiosa y merece ser tratada con respeto y compasión. Por eso, te invitamos a unirte a nosotros en esta noble causa. Ya sea adoptando, ofreciendo tu tiempo como voluntario, haciendo una donación, o simplemente compartiendo nuestra misión, cada gesto cuenta y marca la diferencia.
+        
+        Explora nuestra página para descubrir más sobre nuestras campañas, eventos y cómo puedes involucrarte. Juntos, podemos seguir cambiando vidas y creando un mundo mejor para todos los animales.
+    </p>
+    
+    <div class="Container-Testimonios">
+
+        {% for Testimonio in Testimonios %}
+
+        <div class="Card-Testimonio">
+            
+            <h1 class="Title-Testimonio">{{ Testimonio.NOMBRE_APELLIDO }} - {{ Testimonio.ACCION}} </h1>
+            <p class="Text-Testimonio"> {{ Testimonio.TESTIMONIO }} </p>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

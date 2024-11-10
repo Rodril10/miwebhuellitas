@@ -1,0 +1,37 @@
+
+
+{% extends 'Layouts/Base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+<section class="Section-registro">
+
+    <form action="{% url 'ingresar' %}" method="post">
+
+        {% csrf_token %%}
+        <div class="error-container">
+            <div class="error" *ngIf="error" role="alert">{{error}}</div>
+        </div>   
+        
+
+        <h2 class="title-registro">Bienvenido</h2>
+        
+        {{ form.as_p }}
+        
+        <div class="container-btn-registro">
+            <button type="submit" class="btn-registro">
+                Ingresar
+            </button>
+        </div>  
+
+    </form>
+
+
+    <img src="{% static 'Logo registrate.jpg' %}" alt="", class="img-registro">
+
+
+</section>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Huellas</title>
+</head>
+<body>
+    <header>
+        <p class="disclaimer"> 
+            Esta pagina contiene fines educativos por lo que no debes ingresar datos personales
+        </p>    
+    </header>
+    <div class="titulo">
+        <img class="logotipo-title" src="{% static 'Logotipo.png' %}" alt="logotipo">
+        <h1 class="Title-hullas">Huellas</h1>
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="{% url 'index' %}">Inicio</a></li>
+            <li> <a href="{% url 'who' %}">Quienes somos</a></li>
+            <li> <a href="{% url 'Testimonios' %}">Testimonios</a></li> 
+            <li> <a href="{% url 'Adopta' %}">Adopta</a></li> 
+
+            {% if user.is_authenticated %}
+            <li> <a href="{% url 'indexautenticado' %}">Mi Zona</a></li> 
+            <li> <a href="{% url 'salida' %}">Exit</a></li> 
+
+            {% else %}    
+            <li> <a href="{% url 'registrate' %}">Registrate</a></li> 
+            <li> <a href="{% url 'ingresar' %}">Ingresar</a></li> 
+            {% endif %}
+        </ul>
+    </nav>
+
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <footer>
+        <p class="Disclaimer">@2024 Sitio web de Huellas fundacion sin animo de lucro, Este sitio web fue creado como ACA para la materia de ingenieria Web de la Coorporacion Unificada Nacional CUN </p>
+    </footer>
+</body>
+</html>

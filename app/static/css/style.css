@@ -1,0 +1,401 @@
+/* Aqui encontraras los estilos de la base */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+ 
+}
+header {
+    top: 0;
+    height: 20px;  
+}
+footer {
+    bottom: 0;
+    height: 30px;  
+}
+main {
+    flex: 1;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.disclaimer{
+    font-size: 15px;
+    color:white;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+.titulo{
+    
+    margin-top: 20px;
+    width: 100%;
+    background-color: #fff0e7;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.logotipo-title{
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    height: 120px;
+    
+    
+}
+.Title-hullas{
+    
+    width: 100px;
+    font-family: Verdana;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #333;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+nav ul li {
+    float: left;
+    
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+}
+nav ul li a:hover {
+    background-color: #535252;
+    
+}
+
+/* Aqui encontraras lo  estilos del index */
+.Card-Container{
+    
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #c3cbcd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.Card-Event{
+
+    border-radius: 12px;
+    margin-inline-start: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: auto;
+    
+}
+.img-estilo {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+/* Aqui encontraras  los  estilos de quienes somos  */
+
+.vision, .mision {
+
+    background-color: #ffffff;
+    border: 1px solid #ececec9e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 3px ;
+}
+
+.section-title {
+    
+    color: #495057;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.mission-list {
+    font-size: 1.5em;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.mission-item {
+    margin-bottom: 10px;
+}
+
+/* Aqui  encontraras el estilo de  los  testimonios   */
+
+.Section-Testimonios{
+    margin: 20px;
+    padding: 20px;
+    width: 96%;
+    height: auto;
+
+}
+.Title-Testimonios{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+}
+.introduccion-testimonios{
+    font-weight: lighter;
+    text-align:justify;
+}
+.Container-Testimonios, .Container-section-adoptame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Card-Testimonio{
+    border: 1px solid #fff0e7;
+    background-color: #fff0e7;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding-inline: 20px;
+    width: 400px;
+    height: auto;
+}
+/* Aqui encuentras los estilos de adoptame */
+
+.Section-introduction-adoptame{
+    border: 2px solid beige;
+    margin: 10px;
+    font-size: 150%;
+    padding-inline: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    width: 27%;
+}
+.Card-nombre-adoptame{
+    font-size: xx-large;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.Card-especie-adoptame{
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.Imagen-adoptame{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 100px;
+}
+.Card-adoptame{
+    margin: 10px;
+    padding-inline: 20px;
+    border-radius: 13px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    background-color: #fff0e7;  
+}
+.Container-adoptame{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+/* Aqui encontraras  los  estilos  de  registro  */
+
+.login-container {
+    border: 3px solid green;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+form{
+    width: 35%;
+    height: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    flex-direction: column;
+}
+
+.Section-registro{ 
+     margin: 0px;
+     padding: 0px;
+     display: flex;
+     height: 100%
+;  
+}
+.img-registro{
+    width: 65%;
+    height: 100%;
+}
+.title-registro{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+label {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    
+}
+
+button[type="submit"] {
+    color: black;
+    text-align: center;
+    width: fit-content;
+    font-size: x-large;
+    border-radius: 12px solid beig;
+}
+
+button[type="submit"]:hover {
+    background-color: grey;
+}
+
+.helptext,#id_password2_helptext {
+    justify-content: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+.error-container{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column  ;
+    
+}
+.error{
+    padding-inline: 12px;
+    border-radius: 3px;
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    width: max-content;
+
+}
+.container-btn-registro,.container-autenticado-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;   
+}
+
+/* Encontramos el contenido autenticado */
+
+.Menu-autenticado{
+    
+    width: 75%;
+    border-radius: 13px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    background-color: #fff0e7;
+
+}
+.Bienvenida{
+    padding-left: 2%;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+}

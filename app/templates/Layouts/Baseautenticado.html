@@ -1,0 +1,28 @@
+{% extends 'Layouts/Base.html' %}
+
+{% block content %}
+
+
+<section class="container-autenticado-menu">
+    <section class="Menu-autenticado">
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li> <a href="{% url 'testimonio' %}">Crear Testimonio</a></li>
+                <li> <a href="{% url 'donacion' %}">Crear Donacion</a></li> 
+                {% endif %}
+            </ul>
+        </nav>
+    
+        <section class="Bienvenida">
+            <h1>Bienvenido {{ user.username }}</h1>
+        </section>
+        
+        {% block contenido %}
+        {% endblock %}
+    </section>
+</section>
+
+
+
+{% endblock %}

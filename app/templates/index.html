@@ -1,0 +1,34 @@
+{% extends 'Layouts/Base.html' %}
+
+{% block content %}
+
+{% for event in Eventos %}
+
+
+
+<div class="Card-Container">
+
+    <div class="Card-img">
+
+        <img src="{{ event.IMAGEN.url }}" alt="{{ event.NOMBRE_EVENTO }}" , class="img-estilo">
+        
+    </div>
+
+
+    <div class="Card-Event">
+
+        <h1 class="Card-Title" id="title">{{ event.NOMBRE_EVENTO }}</h1>
+
+        <h2 class="Card-Date" id="date">{{ event.FECHA }}</h2>
+
+        <p class="Card-Description" id="description">{{ event.DESCRIPCION }}</p>
+
+    </div>
+
+</div>
+
+
+{% endfor %}
+
+
+{% endblock %}

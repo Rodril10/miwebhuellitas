@@ -1,0 +1,51 @@
+{% extends 'Layouts/Base.html' %}
+
+
+{% block content %}
+
+<section class="Container-section-adoptame">
+
+    <section class="Section-introduction-adoptame">
+        <h1 class="Title-adoptame">Encuentra a tu Compañero Perfecto</h1>
+
+        <p class="introduccion-adoptame">
+            Bienvenido a la sección "Adóptame" de Huellitas, donde creemos que cada animal merece un hogar lleno de amor y cuidado. Aquí encontrarás una variedad de adorables perros y gatos, cada uno con una historia única y un corazón lleno de amor esperando por ti. Nuestro objetivo es conectar a estos maravillosos animales con personas comprometidas a brindarles una segunda oportunidad en la vida.
+
+    En Huellitas, nos esforzamos por asegurar que cada adopción sea una experiencia positiva tanto para los animales como para las familias adoptivas. Proveemos todo el apoyo necesario durante el proceso de adopción, desde el primer encuentro hasta el seguimiento post-adopción.
+
+    Explora las historias de nuestros amigos peludos y descubre cómo puedes transformar sus vidas y llenar tu hogar de alegría y compañía. ¡Adoptar no solo cambia la vida de un animal, sino que también enriquece la tuya de maneras inimaginables!
+
+    Espero que esta introducción sea lo que buscas. Si necesitas alguna modificación o tienes otra solicitud, estaré encantado de ayudarte. 😊
+
+        </p>
+
+        <h1 class="Title-adoptame">¡Únete a Nuestra Causa!</h1>
+        <p class="introduccion-adoptame">
+            En Huellitas, cada día trabajamos con dedicación y pasión para rescatar, rehabilitar y encontrar hogares amorosos para nuestros amigos peludos. Pero nuestro trabajo no sería posible sin el apoyo incondicional de adoptantes, voluntarios, donantes y todos aquellos que creen en nuestra misión. Ya sea adoptando, ofreciendo tu tiempo como voluntario, haciendo una donación, o simplemente compartiendo nuestra misión, cada gesto cuenta y marca la diferencia.
+        </p>
+        <p class="introduccion-adoptame">Explora las historias de nuestros amigos peludos y descubre cómo puedes transformar sus vidas y llenar tu hogar de alegría y compañía. ¡Adoptar no solo cambia la vida de un animal, sino que también enriquece la tuya de maneras inimaginables!
+
+            Para más información y para concertar una visita, no dudes en contactarnos al (123) 456-7890. ¡Esperamos poder ayudarte a encontrar a tu nuevo mejor amigo!</p>
+    </section>
+
+    <section class="Section-adoptame">
+        <div class="Container-adoptame">
+
+            {% for adoptado in adoptados %}
+
+            <div class="Card-adoptame">
+                
+                <h1 class="Card-nombre-adoptame">{{ adoptado.NOMBRE }}</h1>
+                <h2 class="Card-especie-adoptame"> {{ adoptado.ESPECIE }}</h2>
+                <img src="{{ adoptado.IMAGEN.url }}" alt="", class="Imagen-adoptame">
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </section>
+
+</section>
+
+{% endblock %}

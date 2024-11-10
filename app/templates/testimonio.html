@@ -1,0 +1,23 @@
+{% extends 'Layouts/Baseautenticado.html' %}
+
+{% block contenido %}
+
+<div class="Card-Container">
+
+    <form action="{% url 'testimonio' %}" method="post">
+
+        {% csrf_token %}
+        {{error}}
+
+        {{form.as_p}}
+        
+        <button class="btn btn-success">
+            Publicar Testimonio
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
+
