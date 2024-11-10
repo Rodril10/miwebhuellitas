@@ -11,9 +11,9 @@
 
     <form action="{% url 'ingresar' %}" method="post">
 
-        {% csrf_token %%}
+        {% csrf_token %}
         <div class="error-container">
-            <div class="error" *ngIf="error" role="alert">{{error}}</div>
+            <div class="error" role="alert">{{error}}</div>
         </div>   
         
 
